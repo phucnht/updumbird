@@ -49,7 +49,6 @@ public class ScrollHandler {
         currentGround.update(delta);
         pastGround.update(delta);
 
-        // Same with grass
         if (currentGround.isDissapeared()) {
             currentGround.reset(pastGround.getTailX());
         } else if (pastGround.isDissapeared()) {

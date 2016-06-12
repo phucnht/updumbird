@@ -40,12 +40,12 @@ public class InputHandler implements InputProcessor {
                 AssetLoader.playButton, AssetLoader.playButtonPressed
         );
         musicButton = new Button(
-                Constants.PORTVIEW_WIDTH / 2 - (AssetLoader.musicButton.getRegionWidth() / 2) - 24, centerScreen - 96,
+                Constants.PORTVIEW_WIDTH / 2 - (AssetLoader.musicButton.getRegionWidth() / 2) - 24, centerScreen - 85,
                 AssetLoader.musicButton.getRegionWidth() / 2.0f, AssetLoader.musicButton.getRegionHeight() / 2.0f,
                 AssetLoader.musicButton, AssetLoader.musicButtonPressed
         );
         soundButton = new Button(
-                Constants.PORTVIEW_WIDTH / 2 - (AssetLoader.soundButton.getRegionWidth() / 2) - 5, centerScreen - 96,
+                Constants.PORTVIEW_WIDTH / 2 - (AssetLoader.soundButton.getRegionWidth() / 2) - 5, centerScreen - 85,
                 AssetLoader.soundButton.getRegionWidth() / 2.0f, AssetLoader.soundButton.getRegionHeight() / 2.0f,
                 AssetLoader.soundButton, AssetLoader.soundButtonPressed
         );

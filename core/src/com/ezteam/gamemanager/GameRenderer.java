@@ -171,7 +171,6 @@ public class GameRenderer {
     }
 
     private void drawScore() {
-        // Convert integer into String
         String score = updater.getScore() + "";
 
         AssetLoader.shadow.draw(batch, score, middleX / 4 - (3 * score.length()), centerScreen - 83);
@@ -198,8 +197,8 @@ public class GameRenderer {
         font.draw(batch, currentScoreString, 41 - (2 * currentScoreString.length()), centerScreen - 13);
 
         String highScoreString = "" + AssetLoader.getHighScore();
-        shadow.draw(batch, highScoreString, 87 - (2 * highScoreString.length()), centerScreen - 13);
-        font.draw(batch, highScoreString, 87 - (2 * highScoreString.length()), centerScreen - 13);
+        shadow.draw(batch, highScoreString, 88 - (2 * highScoreString.length()), centerScreen - 13);
+        font.draw(batch, highScoreString, 88 - (2 * highScoreString.length()), centerScreen - 13);
 
         for (Button button : buttons) {
             button.draw(batch);
@@ -268,6 +267,9 @@ public class GameRenderer {
             drawdumbird(runTime);
             drawOver();
         } else if (updater.isHighScore()) {
+            buttons.clear();
+            buttons.add(((InputHandler) Gdx.input.getInputProcessor()).getRetryButton());
+            buttons.add(((InputHandler) Gdx.input.getInputProcessor()).getHomeButton());
             drawScoreboard();
             drawdumbird(runTime);
             drawHighScore();

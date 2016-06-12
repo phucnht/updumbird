@@ -62,22 +62,6 @@ public class Obstacle extends Scollable {
         reset(x);
     }
 
-    public Rectangle getObstacleUp() {
-        return obstacleUp;
-    }
-
-    public Rectangle getObstacleDown() {
-        return obstacleDown;
-    }
-
-    public Rectangle getBarreUp() {
-        return barreUp;
-    }
-
-    public Rectangle getBarreDown() {
-        return barreDown;
-    }
-
     public boolean isScored() {
         return isScored;
     }

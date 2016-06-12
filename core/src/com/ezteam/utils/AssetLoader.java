@@ -104,12 +104,14 @@ public class AssetLoader {
     }
 
     public static void loadPreferences() {
-        // Preferences file
+        // Préférences
         prefs = Gdx.app.getPreferences("dumbird");
 
         if (!prefs.contains("highScore")) {
             prefs.putInteger("highScore", 0);
         }
+
+        prefs.clear();
     }
 
     public static void flipTexture() {
@@ -123,7 +125,6 @@ public class AssetLoader {
         barre.flip(false, true);
         highscore.flip(false, true);
         scoreBoard.flip(false, true);
-        highscore.flip(false, true);
         ready.flip(false, true);
         over.flip(false, true);
         playButton.flip(false, true);
